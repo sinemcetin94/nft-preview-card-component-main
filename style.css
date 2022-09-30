@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --main-bg:hsl(217, 54%, 11%);
+    --card-bg:hsl(216, 50%, 16%);
+    --line-color:hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+
+}
+ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    min-height: 100vh;
+}
+html{
+    font-size: 100%;
+    font:inherit;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-bg);
+}
+.main{
+    max-width: 23rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    background-color: var(--card-bg);
+    padding: 1em;
+}
+.card-title{
+    color: var(--white);
+}
+.card-text{
+    color: var(--soft-blue);
+    font-size: 1em;
+    font-weight: 300;
+}
+.price{
+    color: var(--cyan);
+}
+.time-text{
+    color: var(--soft-blue);
+}
+.ethereum{
+    height: 1.5em;
+}
+.clock{
+    height: 1.5em;
+}
+.card-footer{
+    border-top-color: var(--line-color);
+
+}
+.card-footer img{
+    width: 3em;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+.creater{
+    color: var(--white);
+    font-weight: 600;
+}
+.creater span{
+    color: var(--soft-blue);
+    font-weight: 400;
+}
+.overlay{
+    opacity: 0;
+    position: absolute;
+    top:25%;
+    left: 43%;
+}
+
+.img-equi:hover .overlay{
+    opacity: 1;
+}
+.img-equi:hover .image{
+    opacity: .5;
+}
+.img-equi:hover .cyan{
+    background-color: var(--cyan);
+}
+.card-title:hover{
+    color: var(--cyan);
+}
+.name{
+    color: var(--white);
+}
+.name:hover{
+    color: var(--cyan);
+}
